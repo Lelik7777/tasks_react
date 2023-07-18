@@ -2,6 +2,7 @@ import { sculptureList } from "./data.js";
 import { useState } from "react";
 
 export default function Gallery() {
+
   //let index = 0;
   const [index, setIndex] = useState(0);
   const [showMore, setShowMore] = useState(false);
@@ -13,7 +14,8 @@ export default function Gallery() {
   function handleClick() {
     // index = index + 1;
     if (hasNext) //setIsDone(true);
-    setIndex(index + 1);
+    //setIndex(index + 1);
+    setIndex((index)=>index+1);
 
   }
   function handleClickBack() {
